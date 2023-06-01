@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body style="background-color: hotpink;">
+<div>
+    <label for="_1"></label><input type="text" name="_1" id="_1" size="33"><button onclick="gen1()">Generate</button>
+    <button onclick="gen1hashed()">Hashed</button>
+    <button onclick="clr1()">Clear</button>
+    <p>
+        <label for="_3"></label><input type="text" name="_3" id="_3" size="12" placeholder="Love J">
+        <label for="_2"></label><input type="text" name="_2" id="_2" size="33"><button onclick="gen2()">Generate</button>
+        <button onclick="gen2hashed()">Hashed</button><button onclick="document.getElementById('_3').value='';">Clear</button>
+    </p>
+
+</div>
+<script>
+    function M1626131452199MJWordOffering____(text){
+    text = text.replaceAll(/\W/ig,"_")
+    return ("M"+Date.now()+"J_"+text+"________________________").slice(0,32)
+}
+function gen1(){
+    var input = document.getElementById("_1")
+    input.value = M1626131452199MJWordOffering____("4ever Twitter"+Math.random().toString().slice(3));
+    input.select();
+    document.execCommand("copy");
+}
+function gen2(){
+    var input = document.getElementById("_2")
+    var src = document.getElementById("_3").value
+    input.value = M1626131452199MJWordOffering____(src);
+    input.select();
+    document.execCommand("copy");
+}
+function gen1hashed(){
+    var input = document.getElementById("_1")
+    input.value = "#"+M1626131452199MJWordOffering____("4ever Twitter"+Math.random().toString().slice(3));
+    input.select();
+    document.execCommand("copy");
+}
+function gen2hashed(){
+    var input = document.getElementById("_2")
+    var src = document.getElementById("_3").value
+    input.value = "#"+ M1626131452199MJWordOffering____(src);
+    input.select();
+    document.execCommand("copy");
+}
+function cb1(){
+    var input = document.getElementById("_1")
+
+    input.select();
+}
+function clr1(){
+     document.getElementById("_1").value = "";
+    // var a = document.getElementById("_1").value;
+}
+</script>
+</body>
+</html>
